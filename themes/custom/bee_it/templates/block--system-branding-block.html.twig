@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ *
+ * @ingroup themeable
+ */
+#}
+{% block content %}
+    {% if site_logo %}
+        <header id="header" class="header scrolled-intro" data-header>
+        <nav class="m-nav">
+            <a class="m-nav__logo">
+                <img src="{{ site_logo }}" alt="{{ site_name }}" class="m-nav__logo-img"/>
+            </a>
+            <ul class="m-nav__menu">
+                <li class="menu__item"><a href="/">Home</a></li>
+                <li class="menu__item"><a href="/movies">Movies</a></li>
+                <li class="menu__item"><a href="{{ path('movies') }}">Movies list</a></li>
+                <li class="menu__item"><a href="/movieshouses">Movies without producing houses</a></li>
+                <li class="menu__item"><a href="/production-houses">Production Houses</a></li>
+                <li class="menu__item"><a href="/books">Books</a></li>
+            </ul>
+            <nav data-parent="3" class="m-nav__big-menu" style="display: none; height: 500px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                <div class="m-nav__big-menu--wrapper">
+                    <a href="/admin/config/"> Setting content per page</a>
+                </div>
+                <hr>
+            </nav>
+        </nav>
+        </header>
+    {% endif %}
+{% endblock %}
