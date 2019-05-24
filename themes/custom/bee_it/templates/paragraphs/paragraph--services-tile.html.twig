@@ -1,0 +1,9 @@
+{% for tile in content.field_subtitle  %}
+<div class="m-box__head">{{ tile.value }}</div>
+<div class="m-box__title"> {{ tile.value }}</div>
+{% endfor %}
+{% for tile in content.field_item_list %}
+<ul class="m-box__list">
+    <li class="m-box__list-item">{{ tile.value }}</li>
+</ul>
+{% endfor %}
