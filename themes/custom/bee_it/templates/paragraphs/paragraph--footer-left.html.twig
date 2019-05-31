@@ -1,6 +1,4 @@
 <div class="b-footer__left">
-  {% for item in content.field_image['#items'] %}
-    <img src="{{ file_url(item.entity.uri.value ) }}" class="b-footer__logo">
-  {% endfor %}
+    <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}" class="b-footer__logo">
     <p class="b-footer__copy-right">{{ content.field_subtitle }}</p>
 </div>
