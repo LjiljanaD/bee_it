@@ -1,0 +1,7 @@
+
+<ul class="b-footer__socials">
+{% for field in content.field_link['#items'] %}
+<li class="b-footer__socials-item"><a  class="b-footer__socials-link" href="{{ field.uri }}">{{ field.title }}</a></li>
+{% endfor %}
+</ul>
+

@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    theme:
+      assets/css/bundle.css: {}
+  js:
+    assets/js/bundle.min.js: {}
+  dependencies:
+    - core/jquery.once
+    - core/drupal
+roboto:
+  css:
+    base:
+      '//fonts.googleapis.com/css?family=Roboto:400,500,900': { external: true }
+slick:
+  css:
+    base:
+      '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css': { external: true }
+      '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css': { external: true }

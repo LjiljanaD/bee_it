@@ -1,11 +1,12 @@
-{%  foreach tile in content %}
-
-    {% foreach image in tile.field_image.entity.uri.value %}
-    <img src="{{ image | image_style('thumbnail') }}" alt="" class="m-box-hexagone__icon">
-    {% endfor %}
-    <div class="m-box-hexagone__title">{{ tile.field_title }}</div>
-    <div class="m-box-hexagone__sub-title">{{ tile.field_subtitle }}</div>
-    <div class="m-box-hexagone__body">{{ tile.field_description }}</div>
-    <a class="m-box-hexagone__link" href="#">HIRE THE TEAM <svg class="l-btn--next-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8"><g><g><path fill="#329595" d="M12.01 3H0v2h12.01v3L16 4l-3.99-4z"/></g></g></svg></a>
-
+<div class="m-box-hexagone">
+{% for item in content.field_image['#items'] %}
+<img src="{{ file_url(item.entity.uri.value ) }}" class="m-box-hexagone__icon">
 {% endfor %}
+
+
+    <div class="m-box-hexagone__title">{{ content.field_title }}</div>
+    <div class="m-box-hexagone__sub-title">{{ content.field_subtitle }}</div>
+    <div class="m-box-hexagone__body">{{ content.field_description }}</div><br>
+    <div class="m-box-hexagone__body">{{ content.field_consultation }}</div>
+    <a href="{{ content.field_link.0['#url'] }}" class="m-box-hexagone__link">{{ content.field_link.0['#title'] }} <svg class="l-btn--next-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8"><g><g><path fill="#329595" d="M12.01 3H0v2h12.01v3L16 4l-3.99-4z"/></g></g></svg></a>
+</div>
