@@ -1,0 +1,17 @@
+name: BeeIT Theme
+type: theme
+description: 'Theme for BeeIT site'
+core: 8.x
+base theme: seven
+
+libraries:
+  - bee_it/global-styling
+  - bee_it/roboto
+  - bee_it/slick
+
+regions:
+  header: 'Header'
+  navigation: 'Navigation'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'

@@ -1,0 +1,7 @@
+<div class="m-article__tag-wrapper">
+    {% for tag in elements.field_tag['#items'] %}
+    <div class="m-article__tag m-article__tag--blue">
+        {{ tag.entity.name.value }}
+    </div>
+    {% endfor %}
+</div>

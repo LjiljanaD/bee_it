@@ -1,9 +1,11 @@
-{% for tile in content.field_subtitle  %}
-<div class="m-box__head">{{ tile.value }}</div>
-<div class="m-box__title"> {{ tile.value }}</div>
-{% endfor %}
-{% for tile in content.field_item_list %}
+<article class="m-box" class="services">
+<div class="m-box__head">{{ content.field_subtitle }}</div>
+<div class="m-box__title"> {{ content.field_subtitle }}</div>
 <ul class="m-box__list">
-    <li class="m-box__list-item">{{ tile.value }}</li>
+    {% for item in elements.field_item_list['#items'] %}
+    <li class="m-box__list-item">{{ item.value }}</li>
+    {% endfor %}
 </ul>
-{% endfor %}
+</article>
+
+

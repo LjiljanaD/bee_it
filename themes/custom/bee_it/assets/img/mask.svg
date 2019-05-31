@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1456" height="1400" viewBox="0 0 1456 1400">
+    <defs>
+        <path id="x5afa" d="M1375.428 614.806l427.707-538.79a48.147 48.147 0 0 0 7.071-47.612l-252.67-639.865a48.128 48.128 0 0 0-37.688-29.929L839.47-742.466a48.112 48.112 0 0 0-44.76 17.68l-427.705 538.79a48.142 48.142 0 0 0-7.071 47.612l252.67 639.866a48.127 48.127 0 0 0 37.688 29.93l680.377 101.074a48.111 48.111 0 0 0 44.758-17.68"/>
+        <filter id="x5afb" width="1478" height="1424" x="346" y="-766" filterUnits="userSpaceOnUse">   
+            <feOffset dy="2" in="SourceGraphic" result="FeOffset1022Out"/><feGaussianBlur in="FeOffset1022Out" result="FeGaussianBlur1023Out" stdDeviation="1.6 1.6"/>
+        </filter>
+    </defs>
+    <g>
+        <g transform="translate(-357 753)">
+            <g filter="url(#x5afb)"><use fill="none" stroke-opacity=".3" stroke-width="-3.4e+38" xlink:href="#x5afa"/></g>
+            <use fill="#fec108" xlink:href="#x5afa"/>
+        </g>
+    </g>
+</svg>

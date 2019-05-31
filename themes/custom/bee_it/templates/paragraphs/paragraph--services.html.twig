@@ -3,7 +3,7 @@
         <div class="b-help__intro">
             <h2 class="b-help__intro-title h2">{{ content.field_subtitle }}</h2>
             <p class="b-help__intro-body">{{ content.field_description }}</p>
-            <a href="#" class="l-btn l-btn--green">Learn More</a>
+            <a href="{{ content.field_link.0['#url'] }}" class="l-btn l-btn--green" >{{ content.field_link.0['#title'] }}</a>
         </div>
         {{ content.field_tiles }}
     </div>
