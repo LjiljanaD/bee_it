@@ -1,9 +1,7 @@
 <header class="b-header">
 <div class="l-container">
   <div class="b-header__hexagon-background">
-    {% for item in content.field_image['#items'] %}
-      <img src="{{ file_url(item.entity.uri.value ) }}">
-    {% endfor %}
+      <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}">
   </div>
 
   {{ content.field_header_description }}

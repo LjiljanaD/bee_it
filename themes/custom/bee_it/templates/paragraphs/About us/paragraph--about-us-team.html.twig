@@ -1,0 +1,21 @@
+<section class="b-slider b-slider--team">
+  <div class="b-slider__layout">
+    <div class="b-slider__left-side">
+      <h2 class="b-slider__title h2">{{ content.field_title }}</h2>
+      <div class="b-slider__sub-title">{{ content.field_subtitle }}</div>
+      <p class="b-slider__text">{{ content.field_description }}</p>
+      <a href="{{ content.field_link.0['#url'] }}" class="l-btn l-btn--green" >{{ content.field_link.0['#title'] }}</a>
+    </div>
+
+    <div class="b-slider__right-side">
+      <button type="button" class="icon-arrow slick-arrow--prev"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="18" viewBox="0 0 35 18"><g><g opacity="1" transform="rotate(-180 17.5 9.5)"><path fill="#000000" d="M26.272 7.75H0v4.5h26.272V19L35 10l-8.728-9z"/></g></g></svg></button>
+      <button type="button" class="icon-arrow slick-arrow--next"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="18" viewBox="0 0 35 18"><g><g><path fill="#323231" d="M26.272 6.75H0v4.5h26.272V18L35 9l-8.728-9z"/></g></g></svg></button>
+      <div class="b-slider__right-side-overflow">
+        <div class="b-slider__slider-background"></div>
+        <div class="m-slider m-slider--team js-slider--team">
+         {{ content.field_team_slider }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

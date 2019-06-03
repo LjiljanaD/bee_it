@@ -1,0 +1,14 @@
+<section class="b-preview">
+  <div class="b-preview__layout l-container">
+    <div class="b-preview__left">
+      <div class="b-preview__intro">
+        <h2 class="b-preview__intro-title h2">{{ content.field_title }}</h2>
+        <p class="b-preview__intro__text">{{ content.field_description }}</p>
+        <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}" class="b-preview__intro__img">
+      </div>
+    </div>
+    <div class="b-preview__right">
+    {{ content.field_preview_images }}
+    </div>
+  </div>
+</section

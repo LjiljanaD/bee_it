@@ -1,7 +1,5 @@
 <div class="m-slider__item">
-  {% for image in content.field_image['#items'] %}
-    <img src="{{ file_url(image.entity.uri.value ) }}" alt="" class="m-slider__img">
-  {% endfor %}
+  <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}" alt="" class="m-slider__img">
   <div class="m-slider__title">{{ content.field_subtitle }}</div>
   <p class="m-slider__text">{{ content.field_description }}</p>
 </div>

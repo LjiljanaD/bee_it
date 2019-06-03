@@ -1,6 +1,0 @@
-<div class="m-article__header">
-    <div class="m-article__header-tag">{{ content.field_header_tag }}</div>
-    {% for item in content.field_image['#items'] %}
-        <img src="{{ file_url(item.entity.uri.value ) }}" class="m-article__header-img">
-    {% endfor %}
-</div>
