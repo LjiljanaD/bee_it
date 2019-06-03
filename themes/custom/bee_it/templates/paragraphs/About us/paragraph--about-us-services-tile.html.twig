@@ -1,0 +1,11 @@
+<article class="m-box">
+<div class="m-box__head">{{ content.field_title }}</div>
+<div class="m-box__title"> {{ content.field_subtitle }}</div>
+<ul class="m-box__list">
+    {% for item in elements.field_item_list['#items'] %}
+    <li class="m-box__list-item">{{ item.value }}</li>
+    {% endfor %}
+</ul>
+</article>
+
+

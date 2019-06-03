@@ -1,0 +1,3 @@
+  {% for image in elements.field_image['#items'] %}
+    <img src="{{ file_url(image.entity.uri.value ) }}" class="b-preview__right-img">
+  {% endfor %}

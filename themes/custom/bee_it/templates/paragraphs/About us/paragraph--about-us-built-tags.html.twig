@@ -1,0 +1,13 @@
+<div class="m-article__tag-wrapper">
+  {% for tag in elements.field_tag['#items'] %}
+      {% if tag.entity.name.value == 'CASE STUDY' %}
+      <div class="m-article__tag m-article__tag--blue">
+          {{ tag.entity.name.value  }}
+      </div>
+      {% else %}
+    <div class="m-article__tag m-article__tag--orange">
+      {{ tag.entity.name.value }}
+    </div>
+      {% endif %}
+  {% endfor %}
+</div>
