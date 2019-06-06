@@ -1,0 +1,6 @@
+<div class="b-team__person" data-load-box>
+  <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}" alt="" class="b-team__person-img" />
+  <div class="b-team__person-name">{{ content.field_title }}</div>
+  <div class="b-team__person-role">{{ content.field_subtitle }}</div>
+  <a href="{{ content.field_link.0['#url'] }}" class="b-team__person-contact" >{{ content.field_link.0['#title'] }}</a>
+</div>
