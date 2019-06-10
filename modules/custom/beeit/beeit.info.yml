@@ -1,0 +1,11 @@
+name: BeeIT Custom
+type: module
+description: 'Custom module for BeeIT'
+package: Custom
+version: 8.x
+core: 8.x
+
+libraries:
+  - bee_it/global-styling
+  - bee_it/roboto
+  - bee_it/slick

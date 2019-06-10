@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74b21f919317cd151f65505650614725",
+    "content-hash": "05db6c66385e38e77d32147a7625de69",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -1967,6 +1967,74 @@
             }
         },
         {
+            "name": "drupal/smtp",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smtp.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "80a4df4b2fd2d1b2dc653552d232ce98cb54bb9d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1527598380",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "LukeLast",
+                    "homepage": "https://www.drupal.org/user/30151"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "josesanmartin",
+                    "homepage": "https://www.drupal.org/user/72012"
+                },
+                {
+                    "name": "oadaeh",
+                    "homepage": "https://www.drupal.org/user/4649"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                },
+                {
+                    "name": "yettyn",
+                    "homepage": "https://www.drupal.org/user/93281"
+                }
+            ],
+            "description": "Allow for site emails to be sent through an SMTP server of your choice.",
+            "homepage": "https://www.drupal.org/project/smtp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/smtp",
+                "issues": "https://www.drupal.org/project/issues/smtp"
+            }
+        },
+        {
             "name": "drupal/svg_image",
             "version": "1.9.0",
             "source": {
@@ -2011,6 +2079,73 @@
             "homepage": "https://www.drupal.org/project/svg_image",
             "support": {
                 "source": "https://git.drupalcode.org/project/svg_image"
+            }
+        },
+        {
+            "name": "drupal/token",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/token.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "6382a7e1aabbd8246f1117a26bf4916d285b401d"
+            },
+            "require": {
+                "drupal/core": "^8.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1537557481",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "support": {
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -7426,6 +7561,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/twig_debug": 20,
+        "drupal/smtp": 10,
         "behat/mink": 20,
         "behat/mink-selenium2-driver": 20
     },
