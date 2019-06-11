@@ -1,7 +1,7 @@
 /**
  * Form elements.
  */
-form {
+/* form {
   margin: 0;
   padding: 0;
 }
@@ -12,14 +12,14 @@ fieldset:not(.fieldgroup) {
   padding: 30px 18px 18px;
   border-radius: 2px;
   background-color: #fcfcfa;
-}
+} */
 /**
  * We've temporarily added this Firefox specific rule here to fix fieldset
  * widths.
  * @todo remove once this Mozilla bug is fixed.
  * See https://bugzilla.mozilla.org/show_bug.cgi?id=504622
  */
-@media (min--moz-device-pixel-ratio: 0) {
+@ media (min--moz-device-pixel-ratio: 0) {
   fieldset:not(.fieldgroup) {
     display: table-cell;
   }

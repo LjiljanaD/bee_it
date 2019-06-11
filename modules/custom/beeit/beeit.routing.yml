@@ -1,0 +1,8 @@
+beeit.send:
+  path: '/send-contact'
+  defaults:
+    _controller: 'Drupal\beeit\Controller\NewsController::send'
+    _title: 'Hello'
+  methods: [POST, GET]
+  requirements:
+    _permission: 'access content'

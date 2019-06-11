@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}" alt="" />
+  </div>
+  <div>
+    <div class="b-header__title h1">{{ content.field_title }}</div>
+    <div class="m-article__meta">
+      {% if paragraph.field_blog is not empty %}
+        {{ paragraph.field_blog.entity.Owner.name.value }} / {{ paragraph.field_blog.entity.createdtime|format_date('medium') }}
+      {% endif %}
+    </div>
+    <a href="{{ content.field_link.0['#url'] }}" class="m-article__read-more" >
+      {{ content.field_link.0['#title'] }}
+    </a>
+  </div>
+</div>

@@ -25,7 +25,7 @@ loadMore.init();
 
 // Forms
 import contact from './project/forms/contact';
-contact.init();
+// contact.init();
 
 // Sliders
 import sliderIntro from './project/sliders/sliderIntro.js';

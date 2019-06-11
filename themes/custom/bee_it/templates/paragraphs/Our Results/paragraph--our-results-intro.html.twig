@@ -1,0 +1,17 @@
+<header class="b-header b-header--space">
+  <div class="l-container">
+    <div class="b-header__hexagon-background b-header__hexagon-background--left">
+      <img src="{{ file_url(elements.field_image['#items'].entity.uri.value ) }}" alt="" />
+    </div>
+    <div class="b-header__headline b-header__headline--small">
+      <div class="l-container">
+        <div class="" intro-animate>
+          <h1 class="b-header__title b-header__title--uppercase h1">{{ content.field_header_title }}</h1>
+          <hr class="black">
+          <div class="b-header__body">{{ content.field_subtitle }}</div>
+        </div>
+      </div>
+     {{ content.field_intro_blog }}
+    </div>
+  </div>
+</header>
