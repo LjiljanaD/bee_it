@@ -1,0 +1,39 @@
+uuid: 0346792d-2e58-4fd1-8d54-54d0bfc0da63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_intro.field_header_description
+    - field.field.paragraph.header_intro.field_image
+    - paragraphs.paragraphs_type.header_intro
+  module:
+    - entity_reference_revisions
+    - svg_image
+id: paragraph.header_intro.default
+targetEntityType: paragraph
+bundle: header_intro
+mode: default
+content:
+  field_header_description:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

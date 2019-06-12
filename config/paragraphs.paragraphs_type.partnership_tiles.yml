@@ -1,0 +1,9 @@
+uuid: 6aa46d0f-42f3-4f64-b894-4f9c37045aef
+langcode: en
+status: true
+dependencies: {  }
+id: partnership_tiles
+label: 'Partnership Tiles'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

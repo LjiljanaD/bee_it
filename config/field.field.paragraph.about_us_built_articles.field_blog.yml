@@ -1,0 +1,28 @@
+uuid: d8c8fca4-0bed-439f-9dcd-206cddee8d6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blog
+    - node.type.blogs
+    - paragraphs.paragraphs_type.about_us_built_articles
+id: paragraph.about_us_built_articles.field_blog
+field_name: field_blog
+entity_type: paragraph
+bundle: about_us_built_articles
+label: blog
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blogs: blogs
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

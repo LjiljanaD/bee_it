@@ -1,0 +1,88 @@
+uuid: 10752c32-3c52-4d65-8465-8f44ebf5369c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_footer_links
+    - paragraphs.paragraphs_type.footer_links
+    - paragraphs.paragraphs_type.footer_right
+  module:
+    - entity_reference_revisions
+id: paragraph.footer_right.field_footer_links
+field_name: field_footer_links
+entity_type: paragraph
+bundle: footer_right
+label: 'footer links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      footer_links: footer_links
+    target_bundles_drag_drop:
+      built:
+        weight: 21
+        enabled: false
+      built_article:
+        weight: 22
+        enabled: false
+      built_header:
+        weight: 23
+        enabled: false
+      built_tags:
+        weight: 24
+        enabled: false
+      footer:
+        weight: 25
+        enabled: false
+      footer_left:
+        weight: 26
+        enabled: false
+      footer_links:
+        enabled: true
+        weight: 27
+      footer_right:
+        weight: 28
+        enabled: false
+      header_description:
+        weight: 29
+        enabled: false
+      header_intro:
+        weight: 30
+        enabled: false
+      partnerships:
+        weight: 31
+        enabled: false
+      partnership_tile:
+        weight: 32
+        enabled: false
+      partnership_tiles:
+        weight: 33
+        enabled: false
+      promotion:
+        weight: 34
+        enabled: false
+      services:
+        weight: 35
+        enabled: false
+      services_tile:
+        weight: 36
+        enabled: false
+      services_tiles:
+        weight: 37
+        enabled: false
+      why_us:
+        weight: 38
+        enabled: false
+      why_us_slider:
+        weight: 39
+        enabled: false
+      why_us_tile:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

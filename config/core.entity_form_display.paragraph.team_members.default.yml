@@ -1,0 +1,52 @@
+uuid: c2a1b70c-350e-4741-942b-7f981a97cb8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_members.field_link
+    - field.field.paragraph.team_members.field_team_member
+    - field.field.paragraph.team_members.field_team_positions
+    - paragraphs.paragraphs_type.team_members
+  module:
+    - link
+    - paragraphs
+id: paragraph.team_members.default
+targetEntityType: paragraph
+bundle: team_members
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_team_member:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_team_positions:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

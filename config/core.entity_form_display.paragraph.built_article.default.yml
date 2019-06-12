@@ -1,0 +1,83 @@
+uuid: 0bf1cf26-e4ad-426f-a1d2-360895f3baf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.built_article.field_article_tags
+    - field.field.paragraph.built_article.field_blog
+    - field.field.paragraph.built_article.field_description
+    - field.field.paragraph.built_article.field_header
+    - field.field.paragraph.built_article.field_link
+    - field.field.paragraph.built_article.field_title
+    - paragraphs.paragraphs_type.built_article
+  module:
+    - link_class
+    - paragraphs
+id: paragraph.built_article.default
+targetEntityType: paragraph
+bundle: built_article
+mode: default
+content:
+  field_article_tags:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_blog:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_header:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      link_class_mode: manual
+      link_class_force: ''
+      link_class_select: ''
+    third_party_settings: {  }
+    type: link_class_field_widget
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

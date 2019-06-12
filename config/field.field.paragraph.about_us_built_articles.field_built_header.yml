@@ -1,0 +1,115 @@
+uuid: 4e983047-e2d0-4fa8-8a0b-49436455318a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_built_header
+    - paragraphs.paragraphs_type.about_us_built_articles
+    - paragraphs.paragraphs_type.about_us_built_header
+  module:
+    - entity_reference_revisions
+id: paragraph.about_us_built_articles.field_built_header
+field_name: field_built_header
+entity_type: paragraph
+bundle: about_us_built_articles
+label: 'built header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_us_built_header: about_us_built_header
+    target_bundles_drag_drop:
+      about_us_built:
+        weight: 30
+        enabled: false
+      about_us_built_articles:
+        weight: 31
+        enabled: false
+      about_us_built_header:
+        enabled: true
+        weight: 32
+      about_us_built_tags:
+        weight: 33
+        enabled: false
+      about_us_description:
+        weight: 34
+        enabled: false
+      about_us_intro:
+        weight: 35
+        enabled: false
+      about_us_services:
+        weight: 36
+        enabled: false
+      about_us_services_tile:
+        weight: 37
+        enabled: false
+      about_us_services_tiles:
+        weight: 38
+        enabled: false
+      built:
+        weight: 39
+        enabled: false
+      built_article:
+        weight: 40
+        enabled: false
+      built_header:
+        weight: 41
+        enabled: false
+      built_tags:
+        weight: 42
+        enabled: false
+      footer:
+        weight: 43
+        enabled: false
+      footer_left:
+        weight: 44
+        enabled: false
+      footer_links:
+        weight: 45
+        enabled: false
+      footer_right:
+        weight: 46
+        enabled: false
+      header_description:
+        weight: 47
+        enabled: false
+      header_intro:
+        weight: 48
+        enabled: false
+      partnership_tile:
+        weight: 49
+        enabled: false
+      partnership_tiles:
+        weight: 50
+        enabled: false
+      partnerships:
+        weight: 51
+        enabled: false
+      promotion:
+        weight: 52
+        enabled: false
+      services:
+        weight: 53
+        enabled: false
+      services_tile:
+        weight: 54
+        enabled: false
+      services_tiles:
+        weight: 55
+        enabled: false
+      why_us:
+        weight: 56
+        enabled: false
+      why_us_slider:
+        weight: 57
+        enabled: false
+      why_us_tile:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,40 @@
+uuid: c8fb370b-8441-4dbe-8d90-200fc5da643c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_intro.field_header_description
+    - field.field.paragraph.header_intro.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.header_intro
+  module:
+    - paragraphs
+    - svg_image
+id: paragraph.header_intro.default
+targetEntityType: paragraph
+bundle: header_intro
+mode: default
+content:
+  field_header_description:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

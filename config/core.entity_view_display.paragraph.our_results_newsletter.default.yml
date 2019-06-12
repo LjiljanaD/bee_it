@@ -1,0 +1,29 @@
+uuid: fc4a5e24-447c-4af4-9178-064c299fe33f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_results_newsletter.field_description
+    - field.field.paragraph.our_results_newsletter.field_title
+    - paragraphs.paragraphs_type.our_results_newsletter
+id: paragraph.our_results_newsletter.default
+targetEntityType: paragraph
+bundle: our_results_newsletter
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

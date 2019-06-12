@@ -1,0 +1,19 @@
+uuid: ad376b19-ff46-473b-9d39-ebebc9e6650e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.partnership_tile
+id: paragraph.partnership_tile.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: partnership_tile
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

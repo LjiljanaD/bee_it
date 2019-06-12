@@ -1,0 +1,54 @@
+uuid: 0e86b71e-f17e-413e-b8d7-52d6b518c401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_team_slide.field_image
+    - field.field.paragraph.about_us_team_slide.field_link
+    - field.field.paragraph.about_us_team_slide.field_subtitle
+    - field.field.paragraph.about_us_team_slide.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_us_team_slide
+  module:
+    - link
+    - svg_image
+id: paragraph.about_us_team_slide.default
+targetEntityType: paragraph
+bundle: about_us_team_slide
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_subtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

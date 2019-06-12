@@ -1,0 +1,9 @@
+uuid: 5dfd4bdb-841a-4d2c-b08d-07d8dd98aa61
+langcode: en
+status: true
+dependencies: {  }
+id: our_results_newsletter
+label: 'Our Results Newsletter'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

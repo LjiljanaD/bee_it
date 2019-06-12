@@ -1,0 +1,9 @@
+uuid: 286d914a-54ed-4484-8858-6c8dea3f10cd
+langcode: en
+status: true
+dependencies: {  }
+id: team_intro_image
+label: 'Team Intro Image'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

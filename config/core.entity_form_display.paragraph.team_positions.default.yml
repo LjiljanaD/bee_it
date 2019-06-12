@@ -1,0 +1,43 @@
+uuid: 7d27b22f-5ce3-43c3-bcfc-33953322dadd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_positions.field_description
+    - field.field.paragraph.team_positions.field_link
+    - field.field.paragraph.team_positions.field_title
+    - paragraphs.paragraphs_type.team_positions
+  module:
+    - link
+id: paragraph.team_positions.default
+targetEntityType: paragraph
+bundle: team_positions
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,9 @@
+uuid: 233bcf87-a7e5-433e-a94c-c3f39bac1725
+langcode: en
+status: true
+dependencies: {  }
+id: why_us_tile
+label: 'Why Us Tile'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,26 @@
+uuid: 4092e5be-ea7a-4381-b12f-73529e0c7a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_built_header.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_us_built_header
+  module:
+    - svg_image
+id: paragraph.about_us_built_header.default
+targetEntityType: paragraph
+bundle: about_us_built_header
+mode: default
+content:
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

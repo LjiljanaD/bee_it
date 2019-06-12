@@ -1,0 +1,44 @@
+uuid: 4f7c928c-b0d1-4948-a631-e583f3bb69ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promotion.field_description
+    - field.field.paragraph.promotion.field_link
+    - field.field.paragraph.promotion.field_title
+    - paragraphs.paragraphs_type.promotion
+  module:
+    - link
+id: paragraph.promotion.default
+targetEntityType: paragraph
+bundle: promotion
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

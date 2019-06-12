@@ -1,0 +1,21 @@
+uuid: 7f4071e9-4aef-45b2-92d6-d016b0b0b33b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_title
+    - paragraphs.paragraphs_type.header_description
+  module:
+    - text
+id: paragraph.header_description.field_header_title
+field_name: field_header_title
+entity_type: paragraph
+bundle: header_description
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

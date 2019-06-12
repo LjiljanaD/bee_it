@@ -1,0 +1,29 @@
+uuid: 8930edfe-b46c-421d-aab0-8b5f2e850f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_tag
+    - paragraphs.paragraphs_type.built_header
+    - taxonomy.vocabulary.tags
+id: paragraph.built_header.field_header_tag
+field_name: field_header_tag
+entity_type: paragraph
+bundle: built_header
+label: header-tag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

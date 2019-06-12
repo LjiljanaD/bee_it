@@ -1,0 +1,23 @@
+uuid: 6a78687b-9ceb-45a7-badd-dcd5eeb7b5d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.promotion
+  module:
+    - link
+id: paragraph.promotion.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: promotion
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

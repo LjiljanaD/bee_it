@@ -1,0 +1,19 @@
+uuid: 8ca353d2-c955-41f2-a900-8571aa31a031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.about_us_team
+id: paragraph.about_us_team.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: about_us_team
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

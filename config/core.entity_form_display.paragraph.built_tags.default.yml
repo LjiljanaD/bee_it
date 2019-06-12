@@ -1,0 +1,24 @@
+uuid: aa255901-afcd-47f4-8360-bfaf6cd46936
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.built_tags.field_tag
+    - paragraphs.paragraphs_type.built_tags
+id: paragraph.built_tags.default
+targetEntityType: paragraph
+bundle: built_tags
+mode: default
+content:
+  field_tag:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

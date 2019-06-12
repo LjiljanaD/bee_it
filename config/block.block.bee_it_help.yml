@@ -1,0 +1,22 @@
+uuid: 98136db4-257c-49d7-b033-c4df3916a22b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bee_it
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bee_it_help
+theme: bee_it
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

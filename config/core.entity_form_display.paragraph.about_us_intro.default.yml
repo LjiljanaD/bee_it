@@ -1,0 +1,40 @@
+uuid: f58206fe-cde2-47bc-81f8-61b7730947f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_intro.field_about_us_description
+    - field.field.paragraph.about_us_intro.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_us_intro
+  module:
+    - paragraphs
+    - svg_image
+id: paragraph.about_us_intro.default
+targetEntityType: paragraph
+bundle: about_us_intro
+mode: default
+content:
+  field_about_us_description:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

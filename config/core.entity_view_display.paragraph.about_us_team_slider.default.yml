@@ -1,0 +1,24 @@
+uuid: 3403538b-54d9-4d94-8d5d-a093113a8f7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_team_slider.field_team_slide
+    - paragraphs.paragraphs_type.about_us_team_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.about_us_team_slider.default
+targetEntityType: paragraph
+bundle: about_us_team_slider
+mode: default
+content:
+  field_team_slide:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

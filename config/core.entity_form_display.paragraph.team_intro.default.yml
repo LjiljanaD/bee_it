@@ -1,0 +1,67 @@
+uuid: 380468f8-02cb-4bd5-864c-b98d51a7d8fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_intro.field_description
+    - field.field.paragraph.team_intro.field_image
+    - field.field.paragraph.team_intro.field_subtitle
+    - field.field.paragraph.team_intro.field_team_image
+    - field.field.paragraph.team_intro.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.team_intro
+  module:
+    - paragraphs
+    - svg_image
+id: paragraph.team_intro.default
+targetEntityType: paragraph
+bundle: team_intro
+mode: default
+content:
+  field_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_subtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_team_image:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

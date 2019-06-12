@@ -1,0 +1,55 @@
+uuid: 569e8bce-e053-4579-a64e-567cf6b9a94a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_built.field_built_article
+    - field.field.paragraph.about_us_built.field_description
+    - field.field.paragraph.about_us_built.field_link
+    - field.field.paragraph.about_us_built.field_title
+    - paragraphs.paragraphs_type.about_us_built
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.about_us_built.default
+targetEntityType: paragraph
+bundle: about_us_built
+mode: default
+content:
+  field_built_article:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

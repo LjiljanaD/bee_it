@@ -1,0 +1,90 @@
+uuid: 1b3ff7b9-98a7-4d1c-93f5-a9b60cb68a0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_footer_left
+    - paragraphs.paragraphs_type.footer
+    - paragraphs.paragraphs_type.footer_left
+    - paragraphs.paragraphs_type.footer_right
+  module:
+    - entity_reference_revisions
+id: paragraph.footer.field_footer_left
+field_name: field_footer_left
+entity_type: paragraph
+bundle: footer
+label: Footer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      footer_left: footer_left
+      footer_right: footer_right
+    target_bundles_drag_drop:
+      built:
+        weight: 19
+        enabled: false
+      built_article:
+        weight: 20
+        enabled: false
+      built_header:
+        weight: 21
+        enabled: false
+      built_tags:
+        weight: 22
+        enabled: false
+      footer:
+        weight: 23
+        enabled: false
+      footer_left:
+        enabled: true
+        weight: 24
+      footer_links:
+        weight: 25
+        enabled: false
+      footer_right:
+        enabled: true
+        weight: 26
+      partnership_tile:
+        weight: 27
+        enabled: false
+      partnership_tiles:
+        weight: 28
+        enabled: false
+      partnerships:
+        weight: 29
+        enabled: false
+      header_description:
+        weight: 29
+        enabled: false
+      header_intro:
+        weight: 30
+        enabled: false
+      promotion:
+        weight: 30
+        enabled: false
+      services:
+        weight: 31
+        enabled: false
+      services_tile:
+        weight: 32
+        enabled: false
+      services_tiles:
+        weight: 33
+        enabled: false
+      why_us:
+        weight: 34
+        enabled: false
+      why_us_slider:
+        weight: 35
+        enabled: false
+      why_us_tile:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

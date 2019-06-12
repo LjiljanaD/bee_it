@@ -1,0 +1,27 @@
+uuid: 51fe001e-86f9-4e22-bd63-028980a3251b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_links.field_link
+    - paragraphs.paragraphs_type.footer_links
+  module:
+    - link
+id: paragraph.footer_links.default
+targetEntityType: paragraph
+bundle: footer_links
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

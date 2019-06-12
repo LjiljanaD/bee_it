@@ -1,0 +1,9 @@
+uuid: 50784eb8-5872-486b-b143-55502b36fbab
+langcode: en
+status: true
+dependencies: {  }
+id: footer_right
+label: 'Footer Right'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

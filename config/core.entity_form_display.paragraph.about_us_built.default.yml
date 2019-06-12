@@ -1,0 +1,57 @@
+uuid: ad5c5496-63ae-4641-80ec-7ea5b708a82b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_built.field_built_article
+    - field.field.paragraph.about_us_built.field_description
+    - field.field.paragraph.about_us_built.field_link
+    - field.field.paragraph.about_us_built.field_title
+    - paragraphs.paragraphs_type.about_us_built
+  module:
+    - link
+    - paragraphs
+id: paragraph.about_us_built.default
+targetEntityType: paragraph
+bundle: about_us_built
+mode: default
+content:
+  field_built_article:
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

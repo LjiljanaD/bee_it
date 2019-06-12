@@ -1,0 +1,80 @@
+uuid: 24c8c21a-63e1-460a-b1ea-7b26224a32e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_built_articles.field_article_tags
+    - field.field.paragraph.about_us_built_articles.field_blog
+    - field.field.paragraph.about_us_built_articles.field_built_header
+    - field.field.paragraph.about_us_built_articles.field_description
+    - field.field.paragraph.about_us_built_articles.field_link
+    - field.field.paragraph.about_us_built_articles.field_title
+    - paragraphs.paragraphs_type.about_us_built_articles
+  module:
+    - link
+    - paragraphs
+id: paragraph.about_us_built_articles.default
+targetEntityType: paragraph
+bundle: about_us_built_articles
+mode: default
+content:
+  field_article_tags:
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_blog:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_built_header:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

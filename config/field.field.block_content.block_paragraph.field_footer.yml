@@ -1,0 +1,82 @@
+uuid: 48f49cad-3d83-4f66-8d48-23ed1d5049c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_paragraph
+    - field.storage.block_content.field_footer
+    - paragraphs.paragraphs_type.footer
+  module:
+    - entity_reference_revisions
+id: block_content.block_paragraph.field_footer
+field_name: field_footer
+entity_type: block_content
+bundle: block_paragraph
+label: footer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      footer: footer
+    target_bundles_drag_drop:
+      built:
+        weight: 19
+        enabled: false
+      built_article:
+        weight: 20
+        enabled: false
+      built_header:
+        weight: 21
+        enabled: false
+      built_tags:
+        weight: 22
+        enabled: false
+      footer:
+        enabled: true
+        weight: 23
+      footer_left:
+        weight: 24
+        enabled: false
+      footer_links:
+        weight: 25
+        enabled: false
+      footer_right:
+        weight: 26
+        enabled: false
+      partnership_tile:
+        weight: 27
+        enabled: false
+      partnership_tiles:
+        weight: 28
+        enabled: false
+      partnerships:
+        weight: 29
+        enabled: false
+      promotion:
+        weight: 30
+        enabled: false
+      services:
+        weight: 31
+        enabled: false
+      services_tile:
+        weight: 32
+        enabled: false
+      services_tiles:
+        weight: 33
+        enabled: false
+      why_us:
+        weight: 34
+        enabled: false
+      why_us_slider:
+        weight: 35
+        enabled: false
+      why_us_tile:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

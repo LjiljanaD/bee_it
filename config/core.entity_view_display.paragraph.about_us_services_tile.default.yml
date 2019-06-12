@@ -1,0 +1,39 @@
+uuid: 193524f3-6c7b-4e20-9ae8-6bb827d1dab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_services_tile.field_item_list
+    - field.field.paragraph.about_us_services_tile.field_subtitle
+    - field.field.paragraph.about_us_services_tile.field_title
+    - paragraphs.paragraphs_type.about_us_services_tile
+id: paragraph.about_us_services_tile.default
+targetEntityType: paragraph
+bundle: about_us_services_tile
+mode: default
+content:
+  field_item_list:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

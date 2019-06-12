@@ -1,0 +1,26 @@
+uuid: c09defc8-f34f-458e-8ac6-076b3a7087a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_intro_image.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.team_intro_image
+  module:
+    - svg_image
+id: paragraph.team_intro_image.default
+targetEntityType: paragraph
+bundle: team_intro_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: 725b9ff7-cdb3-4860-b004-9bca40f33220
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bee_it
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: bee_it_search
+theme: bee_it
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

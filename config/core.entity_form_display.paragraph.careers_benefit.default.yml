@@ -1,0 +1,44 @@
+uuid: cba7490a-9e5e-4a7f-af6d-5dfdb9d57ac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_benefit.field_description
+    - field.field.paragraph.careers_benefit.field_image
+    - field.field.paragraph.careers_benefit.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.careers_benefit
+  module:
+    - svg_image
+id: paragraph.careers_benefit.default
+targetEntityType: paragraph
+bundle: careers_benefit
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

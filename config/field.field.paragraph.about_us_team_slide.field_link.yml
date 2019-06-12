@@ -1,0 +1,23 @@
+uuid: 7a0c2e00-b1bb-4638-9992-6739d8b6332a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.about_us_team_slide
+  module:
+    - link
+id: paragraph.about_us_team_slide.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: about_us_team_slide
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

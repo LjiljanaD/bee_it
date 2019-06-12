@@ -1,0 +1,24 @@
+uuid: b13bb4e3-3566-4419-b4a8-bf1dc0d78ea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_services_tiles.field_services_tile
+    - paragraphs.paragraphs_type.about_us_services_tiles
+  module:
+    - entity_reference_revisions
+id: paragraph.about_us_services_tiles.default
+targetEntityType: paragraph
+bundle: about_us_services_tiles
+mode: default
+content:
+  field_services_tile:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

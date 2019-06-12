@@ -1,0 +1,19 @@
+uuid: b82ae5a7-6c6e-489e-be58-aa4a2ea80a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.why_us_tile
+id: paragraph.why_us_tile.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: why_us_tile
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

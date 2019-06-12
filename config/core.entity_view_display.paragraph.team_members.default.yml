@@ -1,0 +1,48 @@
+uuid: d2632367-2457-44c7-a043-a7f2e4177cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_members.field_link
+    - field.field.paragraph.team_members.field_team_member
+    - field.field.paragraph.team_members.field_team_positions
+    - paragraphs.paragraphs_type.team_members
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.team_members.default
+targetEntityType: paragraph
+bundle: team_members
+mode: default
+content:
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_team_member:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_team_positions:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

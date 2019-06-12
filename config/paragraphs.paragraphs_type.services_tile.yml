@@ -1,0 +1,9 @@
+uuid: 74b5e2d8-4510-4ee2-92d5-6c264553240f
+langcode: en
+status: true
+dependencies: {  }
+id: services_tile
+label: 'Services Tile'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

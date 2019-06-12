@@ -1,0 +1,23 @@
+uuid: 87c2c545-9684-46ae-bae4-dc806195affb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.careers_meet_the_team
+  module:
+    - link
+id: paragraph.careers_meet_the_team.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: careers_meet_the_team
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

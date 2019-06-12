@@ -1,0 +1,57 @@
+uuid: 981e5414-56ee-4525-93b7-b0ee4db49c9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_results_intro.field_header_title
+    - field.field.paragraph.our_results_intro.field_image
+    - field.field.paragraph.our_results_intro.field_intro_blog
+    - field.field.paragraph.our_results_intro.field_subtitle
+    - paragraphs.paragraphs_type.our_results_intro
+  module:
+    - entity_reference_revisions
+    - svg_image
+    - text
+id: paragraph.our_results_intro.default
+targetEntityType: paragraph
+bundle: our_results_intro
+mode: default
+content:
+  field_header_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_intro_blog:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

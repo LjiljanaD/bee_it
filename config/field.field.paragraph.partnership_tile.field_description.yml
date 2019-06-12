@@ -1,0 +1,19 @@
+uuid: 74616dec-4eee-440b-baeb-d946120e26f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.partnership_tile
+id: paragraph.partnership_tile.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: partnership_tile
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

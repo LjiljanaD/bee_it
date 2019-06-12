@@ -1,0 +1,20 @@
+uuid: e8dbe9ad-0380-4158-b5af-0a533d960548
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bee_it
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bee_it_local_actions
+theme: bee_it
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

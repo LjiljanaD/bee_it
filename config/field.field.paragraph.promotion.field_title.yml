@@ -1,0 +1,19 @@
+uuid: 701654f6-37dd-4dca-a804-aaeddb4f0ef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.promotion
+id: paragraph.promotion.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: promotion
+label: title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

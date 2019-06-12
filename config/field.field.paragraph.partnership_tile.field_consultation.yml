@@ -1,0 +1,19 @@
+uuid: b128d20f-6e84-40a2-8461-5a259d06d865
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_consultation
+    - paragraphs.paragraphs_type.partnership_tile
+id: paragraph.partnership_tile.field_consultation
+field_name: field_consultation
+entity_type: paragraph
+bundle: partnership_tile
+label: consultation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

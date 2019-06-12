@@ -1,0 +1,26 @@
+uuid: fd7e3179-af8f-4fe6-8656-5a39d9416407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_preview_images.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_us_preview_images
+  module:
+    - svg_image
+id: paragraph.about_us_preview_images.default
+targetEntityType: paragraph
+bundle: about_us_preview_images
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

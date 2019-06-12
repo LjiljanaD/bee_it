@@ -1,0 +1,23 @@
+uuid: ed4166d3-404a-4586-9117-aab7b658e7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tiles
+    - paragraphs.paragraphs_type.services
+  module:
+    - entity_reference_revisions
+id: paragraph.services.field_tiles
+field_name: field_tiles
+entity_type: paragraph
+bundle: services
+label: tiles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

@@ -1,0 +1,24 @@
+uuid: 91c44ee3-57bd-45f0-ad5e-818ae3d2be7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_built_tags.field_tag
+    - paragraphs.paragraphs_type.about_us_built_tags
+id: paragraph.about_us_built_tags.default
+targetEntityType: paragraph
+bundle: about_us_built_tags
+mode: default
+content:
+  field_tag:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

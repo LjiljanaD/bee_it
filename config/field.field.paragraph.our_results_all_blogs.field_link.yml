@@ -1,0 +1,28 @@
+uuid: 7f95456c-f201-4b7a-83c8-45ebb44e7ed3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.our_results_all_blogs
+  module:
+    - link
+id: paragraph.our_results_all_blogs.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: our_results_all_blogs
+label: link
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/loadmore'
+    title: 'Load More'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

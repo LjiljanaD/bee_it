@@ -1,0 +1,33 @@
+uuid: fe503e01-0c78-4b4a-85e7-4facade5d1fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_benefits.field_benefit
+    - field.field.paragraph.careers_benefits.field_title
+    - paragraphs.paragraphs_type.careers_benefits
+  module:
+    - entity_reference_revisions
+id: paragraph.careers_benefits.default
+targetEntityType: paragraph
+bundle: careers_benefits
+mode: default
+content:
+  field_benefit:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

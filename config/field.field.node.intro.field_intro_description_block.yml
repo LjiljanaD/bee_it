@@ -1,0 +1,29 @@
+uuid: 5c6be0f5-147b-45a1-89ae-5e9e7b917fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_description_block
+    - node.type.intro
+  module:
+    - entity_reference_revisions
+id: node.intro.field_intro_description_block
+field_name: field_intro_description_block
+entity_type: node
+bundle: intro
+label: 'intro description block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {  }
+    target_bundles_drag_drop:
+      intro_description:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

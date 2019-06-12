@@ -1,0 +1,64 @@
+uuid: a02a0011-ccaf-4260-bf0d-ff2db7d4f3d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_team.field_description
+    - field.field.paragraph.about_us_team.field_link
+    - field.field.paragraph.about_us_team.field_subtitle
+    - field.field.paragraph.about_us_team.field_team_slider
+    - field.field.paragraph.about_us_team.field_title
+    - paragraphs.paragraphs_type.about_us_team
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.about_us_team.default
+targetEntityType: paragraph
+bundle: about_us_team
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subtitle:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_team_slider:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
