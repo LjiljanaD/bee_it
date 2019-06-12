@@ -1,5 +1,11 @@
 <?php
 
-function bee_it(){
+function beeit_mail($key, &$message,$params) {
 
+  switch ($key) {
+    case 'newsletter':
+      $message['subject'] = $params['subject'];
+      $message['body'][]=  $params['body'] ;
+      break;
+  }
 }

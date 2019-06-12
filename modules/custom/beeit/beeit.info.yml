@@ -9,3 +9,6 @@ libraries:
   - bee_it/global-styling
   - bee_it/roboto
   - bee_it/slick
+
+libraries-override:
+   core/themes/seven/css/components/form.css:  false

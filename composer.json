@@ -17,9 +17,7 @@
         "drupal/webform": "^5.2",
         "drupal/clientside_validation": "^1.2",
         "drupal/token": "^1.5",
-        "drupal/smtp": "^1.0@beta"
-    },
-    "replace": {
+        "drupal/smtp": "^1.0@beta",
         "drupal/core": "^8.7"
     },
     "minimum-stability": "dev",

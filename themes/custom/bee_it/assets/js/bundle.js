@@ -51,3 +51,7 @@ requestQuote.init();
 // Mask
 import mask from './project/mask';
 mask.init();
+
+// Newsletter
+import newsletter from './project/forms/newsletter';
+newsletter.init();
