@@ -1,0 +1,154 @@
+uuid: 9d469a75-8153-4581-9429-4de066559bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_benefit
+    - paragraphs.paragraphs_type.careers_benefit
+    - paragraphs.paragraphs_type.careers_benefits
+  module:
+    - entity_reference_revisions
+id: paragraph.careers_benefits.field_benefit
+field_name: field_benefit
+entity_type: paragraph
+bundle: careers_benefits
+label: Benefit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      careers_benefit: careers_benefit
+    target_bundles_drag_drop:
+      about_us_built:
+        weight: 43
+        enabled: false
+      about_us_built_articles:
+        weight: 44
+        enabled: false
+      about_us_built_header:
+        weight: 45
+        enabled: false
+      about_us_built_tags:
+        weight: 46
+        enabled: false
+      about_us_description:
+        weight: 47
+        enabled: false
+      about_us_form:
+        weight: 48
+        enabled: false
+      about_us_intro:
+        weight: 49
+        enabled: false
+      about_us_preview:
+        weight: 50
+        enabled: false
+      about_us_preview_images:
+        weight: 51
+        enabled: false
+      about_us_services:
+        weight: 52
+        enabled: false
+      about_us_services_tile:
+        weight: 53
+        enabled: false
+      about_us_services_tiles:
+        weight: 54
+        enabled: false
+      about_us_team:
+        weight: 55
+        enabled: false
+      about_us_team_slide:
+        weight: 56
+        enabled: false
+      about_us_team_slider:
+        weight: 57
+        enabled: false
+      built:
+        weight: 58
+        enabled: false
+      built_article:
+        weight: 59
+        enabled: false
+      built_header:
+        weight: 60
+        enabled: false
+      built_tags:
+        weight: 61
+        enabled: false
+      careers_benefit:
+        enabled: true
+        weight: 62
+      careers_benefits:
+        weight: 63
+        enabled: false
+      careers_intro:
+        weight: 64
+        enabled: false
+      footer:
+        weight: 65
+        enabled: false
+      footer_left:
+        weight: 66
+        enabled: false
+      footer_links:
+        weight: 67
+        enabled: false
+      footer_right:
+        weight: 68
+        enabled: false
+      header_description:
+        weight: 69
+        enabled: false
+      header_intro:
+        weight: 70
+        enabled: false
+      our_results_all_blogs:
+        weight: 71
+        enabled: false
+      our_results_blog:
+        weight: 72
+        enabled: false
+      our_results_intro:
+        weight: 73
+        enabled: false
+      our_results_intro_blog:
+        weight: 74
+        enabled: false
+      partnership_tile:
+        weight: 75
+        enabled: false
+      partnership_tiles:
+        weight: 76
+        enabled: false
+      partnerships:
+        weight: 77
+        enabled: false
+      promotion:
+        weight: 78
+        enabled: false
+      services:
+        weight: 79
+        enabled: false
+      services_tile:
+        weight: 80
+        enabled: false
+      services_tiles:
+        weight: 81
+        enabled: false
+      why_us:
+        weight: 82
+        enabled: false
+      why_us_slider:
+        weight: 83
+        enabled: false
+      why_us_tile:
+        weight: 84
+        enabled: false
+field_type: entity_reference_revisions

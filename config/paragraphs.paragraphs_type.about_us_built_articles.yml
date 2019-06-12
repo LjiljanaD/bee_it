@@ -1,0 +1,9 @@
+uuid: 5c7b819a-9240-4772-b4a9-012fd9e0a0eb
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_built_articles
+label: 'About us Built Articles'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

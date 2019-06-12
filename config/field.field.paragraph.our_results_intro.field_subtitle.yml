@@ -1,0 +1,19 @@
+uuid: fde50fae-de10-44d1-a8fd-0e65a82343af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.our_results_intro
+id: paragraph.our_results_intro.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: our_results_intro
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: f3115b37-37be-45f3-b4e6-4826ff5dcb7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.our_results_newsletter
+id: paragraph.our_results_newsletter.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: our_results_newsletter
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

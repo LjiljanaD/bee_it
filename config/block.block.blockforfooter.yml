@@ -1,0 +1,25 @@
+uuid: d7e97adf-ac01-4711-a6df-926a3435bc02
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_paragraph:aca8a108-7dda-4e1a-8c61-34501b4d424c'
+  module:
+    - block_content
+  theme:
+    - bee_it
+id: blockforfooter
+theme: bee_it
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:aca8a108-7dda-4e1a-8c61-34501b4d424c'
+settings:
+  id: 'block_content:aca8a108-7dda-4e1a-8c61-34501b4d424c'
+  label: 'Block for footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

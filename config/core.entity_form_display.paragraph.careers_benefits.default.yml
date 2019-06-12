@@ -1,0 +1,38 @@
+uuid: 396a24ba-b897-49a9-8013-82cf0c0253c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_benefits.field_benefit
+    - field.field.paragraph.careers_benefits.field_title
+    - paragraphs.paragraphs_type.careers_benefits
+  module:
+    - paragraphs
+id: paragraph.careers_benefits.default
+targetEntityType: paragraph
+bundle: careers_benefits
+mode: default
+content:
+  field_benefit:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

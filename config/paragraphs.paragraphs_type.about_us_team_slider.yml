@@ -1,0 +1,9 @@
+uuid: 3976b23a-bbf3-43fd-9280-e27b94f5e304
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_team_slider
+label: 'About us Team Slider'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

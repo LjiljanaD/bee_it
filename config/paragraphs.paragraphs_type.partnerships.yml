@@ -1,0 +1,9 @@
+uuid: 13638100-b141-434c-b487-318bd4456122
+langcode: en
+status: true
+dependencies: {  }
+id: partnerships
+label: Partnerships
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

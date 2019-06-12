@@ -1,0 +1,58 @@
+uuid: 0ab2b996-98e8-4eeb-b2c7-e3a741cb75bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header
+    - paragraphs.paragraphs_type.built_article
+    - paragraphs.paragraphs_type.built_header
+  module:
+    - entity_reference_revisions
+id: paragraph.built_article.field_header
+field_name: field_header
+entity_type: paragraph
+bundle: built_article
+label: header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      built_header: built_header
+    target_bundles_drag_drop:
+      built:
+        weight: 11
+        enabled: false
+      built_article:
+        weight: 12
+        enabled: false
+      built_header:
+        enabled: true
+        weight: 13
+      built_tags:
+        weight: 14
+        enabled: false
+      partnership_tile:
+        weight: 15
+        enabled: false
+      partnership_tiles:
+        weight: 16
+        enabled: false
+      partnerships:
+        weight: 17
+        enabled: false
+      services:
+        weight: 18
+        enabled: false
+      services_tile:
+        weight: 19
+        enabled: false
+      services_tiles:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

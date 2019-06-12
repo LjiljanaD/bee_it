@@ -1,0 +1,9 @@
+uuid: 1aa25899-386c-4c46-bd92-4cc041230052
+langcode: en
+status: true
+dependencies: {  }
+id: careers_intro
+label: 'Careers Intro'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

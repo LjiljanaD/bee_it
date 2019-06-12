@@ -1,0 +1,19 @@
+uuid: d8f2c887-880b-4581-b05f-72b4ffee9bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.about_us_team_slide
+id: paragraph.about_us_team_slide.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: about_us_team_slide
+label: title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -9,6 +9,9 @@ libraries:
   - bee_it/roboto
   - bee_it/slick
 
+libraries-override:
+  core/themes/seven/css/components/form.css:  false
+
 regions:
   header: 'Header'
   navigation: 'Navigation'

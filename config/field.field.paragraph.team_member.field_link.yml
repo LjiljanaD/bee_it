@@ -1,0 +1,23 @@
+uuid: ed7d148c-9374-4d78-bb11-52f66510bb0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.team_member
+  module:
+    - link
+id: paragraph.team_member.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: team_member
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

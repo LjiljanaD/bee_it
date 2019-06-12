@@ -1,0 +1,44 @@
+uuid: 8b4c8c45-9a17-4c38-bb91-69ca1611e379
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_intro.field_description
+    - field.field.paragraph.careers_intro.field_image
+    - field.field.paragraph.careers_intro.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.careers_intro
+  module:
+    - svg_image
+id: paragraph.careers_intro.default
+targetEntityType: paragraph
+bundle: careers_intro
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

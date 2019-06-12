@@ -1,0 +1,46 @@
+uuid: 8b438793-f8d8-4846-aa06-782655c7dfa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_partner_tiles
+    - paragraphs.paragraphs_type.partnership_tiles
+    - paragraphs.paragraphs_type.partnerships
+  module:
+    - entity_reference_revisions
+id: paragraph.partnerships.field_partner_tiles
+field_name: field_partner_tiles
+entity_type: paragraph
+bundle: partnerships
+label: 'partner tiles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      partnership_tiles: partnership_tiles
+    target_bundles_drag_drop:
+      partnership_tile:
+        weight: 7
+        enabled: false
+      partnership_tiles:
+        enabled: true
+        weight: 8
+      partnerships:
+        weight: 9
+        enabled: false
+      services:
+        weight: 10
+        enabled: false
+      services_tile:
+        weight: 11
+        enabled: false
+      services_tiles:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

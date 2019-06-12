@@ -1,0 +1,9 @@
+uuid: 1965c520-ab1c-4b95-b3a5-ef3e4a387074
+langcode: en
+status: true
+dependencies: {  }
+id: our_results_all_blogs
+label: 'Our Results All Blogs'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

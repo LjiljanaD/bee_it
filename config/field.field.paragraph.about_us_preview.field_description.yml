@@ -1,0 +1,19 @@
+uuid: 41127b85-fa81-4f8f-8b58-580551456889
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.about_us_preview
+id: paragraph.about_us_preview.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: about_us_preview
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

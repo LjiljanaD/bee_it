@@ -1,0 +1,9 @@
+uuid: 2ff6afb7-8017-4c26-9cc7-178b6bfa05fe
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_team
+label: 'About us Team'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

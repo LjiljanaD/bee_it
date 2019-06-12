@@ -1,0 +1,45 @@
+uuid: aa3c8d11-b89d-470d-ad16-31c158530bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_us_tile.field_description
+    - field.field.paragraph.why_us_tile.field_image
+    - field.field.paragraph.why_us_tile.field_subtitle
+    - paragraphs.paragraphs_type.why_us_tile
+  module:
+    - svg_image
+id: paragraph.why_us_tile.default
+targetEntityType: paragraph
+bundle: why_us_tile
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

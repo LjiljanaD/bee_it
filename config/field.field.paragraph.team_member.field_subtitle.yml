@@ -1,0 +1,19 @@
+uuid: 2eadc032-9671-4615-b7c5-7523cd434bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.team_member
+id: paragraph.team_member.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: team_member
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

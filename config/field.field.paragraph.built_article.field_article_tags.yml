@@ -1,0 +1,58 @@
+uuid: 7e22078c-726e-4905-9e13-2ffb6a4a6ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_article_tags
+    - paragraphs.paragraphs_type.built_article
+    - paragraphs.paragraphs_type.built_tags
+  module:
+    - entity_reference_revisions
+id: paragraph.built_article.field_article_tags
+field_name: field_article_tags
+entity_type: paragraph
+bundle: built_article
+label: 'article tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      built_tags: built_tags
+    target_bundles_drag_drop:
+      built:
+        weight: 11
+        enabled: false
+      built_article:
+        weight: 12
+        enabled: false
+      built_header:
+        weight: 13
+        enabled: false
+      built_tags:
+        enabled: true
+        weight: 14
+      partnership_tile:
+        weight: 15
+        enabled: false
+      partnership_tiles:
+        weight: 16
+        enabled: false
+      partnerships:
+        weight: 17
+        enabled: false
+      services:
+        weight: 18
+        enabled: false
+      services_tile:
+        weight: 19
+        enabled: false
+      services_tiles:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

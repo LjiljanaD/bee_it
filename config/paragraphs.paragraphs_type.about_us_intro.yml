@@ -1,0 +1,9 @@
+uuid: 904b0fff-92b2-477e-8776-56e374190a6a
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_intro
+label: 'About Us Intro'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

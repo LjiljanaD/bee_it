@@ -1,0 +1,38 @@
+uuid: 08759f3f-cf70-4cc1-81fa-7cd0bc2c2cf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_right.field_description
+    - field.field.paragraph.footer_right.field_footer_links
+    - paragraphs.paragraphs_type.footer_right
+  module:
+    - paragraphs
+id: paragraph.footer_right.default
+targetEntityType: paragraph
+bundle: footer_right
+mode: default
+content:
+  field_description:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_footer_links:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

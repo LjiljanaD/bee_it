@@ -6,3 +6,11 @@ beeit.send:
   methods: [POST, GET]
   requirements:
     _permission: 'access content'
+
+beeit.settings:
+  path: '/admin/config/beeit-settings'
+  defaults:
+    _form: '\Drupal\beeit\Form\BeeItSettingsForm'
+    _title: 'Bee IT settings'
+  requirements:
+    _permission: 'access content'

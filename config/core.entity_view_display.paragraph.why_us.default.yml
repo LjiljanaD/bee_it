@@ -1,0 +1,64 @@
+uuid: 44f10224-4aac-4840-9f05-72499f0e2cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_us.field_description
+    - field.field.paragraph.why_us.field_link
+    - field.field.paragraph.why_us.field_slider
+    - field.field.paragraph.why_us.field_subtitle
+    - field.field.paragraph.why_us.field_title
+    - paragraphs.paragraphs_type.why_us
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.why_us.default
+targetEntityType: paragraph
+bundle: why_us
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_slider:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: 8ccf39b9-196f-4b12-ad6f-1cc77b09776c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_right.field_description
+    - field.field.paragraph.footer_right.field_footer_links
+    - paragraphs.paragraphs_type.footer_right
+  module:
+    - entity_reference_revisions
+id: paragraph.footer_right.default
+targetEntityType: paragraph
+bundle: footer_right
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_footer_links:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

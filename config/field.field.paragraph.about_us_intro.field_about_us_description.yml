@@ -1,0 +1,94 @@
+uuid: f2afa8cf-067f-4f1f-9865-b7afb2ffadda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_us_description
+    - paragraphs.paragraphs_type.about_us_description
+    - paragraphs.paragraphs_type.about_us_intro
+  module:
+    - entity_reference_revisions
+id: paragraph.about_us_intro.field_about_us_description
+field_name: field_about_us_description
+entity_type: paragraph
+bundle: about_us_intro
+label: 'About us Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_us_description: about_us_description
+    target_bundles_drag_drop:
+      about_us_description:
+        enabled: true
+        weight: 23
+      about_us_intro:
+        weight: 24
+        enabled: false
+      built:
+        weight: 25
+        enabled: false
+      built_article:
+        weight: 26
+        enabled: false
+      built_header:
+        weight: 27
+        enabled: false
+      built_tags:
+        weight: 28
+        enabled: false
+      footer:
+        weight: 29
+        enabled: false
+      footer_left:
+        weight: 30
+        enabled: false
+      footer_links:
+        weight: 31
+        enabled: false
+      footer_right:
+        weight: 32
+        enabled: false
+      header_description:
+        weight: 33
+        enabled: false
+      header_intro:
+        weight: 34
+        enabled: false
+      partnership_tile:
+        weight: 35
+        enabled: false
+      partnership_tiles:
+        weight: 36
+        enabled: false
+      partnerships:
+        weight: 37
+        enabled: false
+      promotion:
+        weight: 38
+        enabled: false
+      services:
+        weight: 39
+        enabled: false
+      services_tile:
+        weight: 40
+        enabled: false
+      services_tiles:
+        weight: 41
+        enabled: false
+      why_us:
+        weight: 42
+        enabled: false
+      why_us_slider:
+        weight: 43
+        enabled: false
+      why_us_tile:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

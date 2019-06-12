@@ -1,0 +1,52 @@
+uuid: 7f39cf49-d945-4491-a732-18931265db6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_meet_the_team.field_description
+    - field.field.paragraph.careers_meet_the_team.field_link
+    - field.field.paragraph.careers_meet_the_team.field_subtitle
+    - field.field.paragraph.careers_meet_the_team.field_title
+    - paragraphs.paragraphs_type.careers_meet_the_team
+  module:
+    - link
+id: paragraph.careers_meet_the_team.default
+targetEntityType: paragraph
+bundle: careers_meet_the_team
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

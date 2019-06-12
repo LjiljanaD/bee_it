@@ -1,0 +1,130 @@
+uuid: 331a4d05-d862-4f66-b45b-d72dfb606987
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_team_slide
+    - paragraphs.paragraphs_type.about_us_team_slide
+    - paragraphs.paragraphs_type.about_us_team_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.about_us_team_slider.field_team_slide
+field_name: field_team_slide
+entity_type: paragraph
+bundle: about_us_team_slider
+label: 'Team Slide'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_us_team_slide: about_us_team_slide
+    target_bundles_drag_drop:
+      about_us_built:
+        weight: 35
+        enabled: false
+      about_us_built_articles:
+        weight: 36
+        enabled: false
+      about_us_built_header:
+        weight: 37
+        enabled: false
+      about_us_built_tags:
+        weight: 38
+        enabled: false
+      about_us_description:
+        weight: 39
+        enabled: false
+      about_us_intro:
+        weight: 40
+        enabled: false
+      about_us_preview:
+        weight: 41
+        enabled: false
+      about_us_preview_images:
+        weight: 42
+        enabled: false
+      about_us_services:
+        weight: 43
+        enabled: false
+      about_us_services_tile:
+        weight: 44
+        enabled: false
+      about_us_services_tiles:
+        weight: 45
+        enabled: false
+      about_us_team:
+        weight: 46
+        enabled: false
+      about_us_team_slide:
+        enabled: true
+        weight: 47
+      about_us_team_slider:
+        weight: 48
+        enabled: false
+      built:
+        weight: 49
+        enabled: false
+      built_article:
+        weight: 50
+        enabled: false
+      built_header:
+        weight: 51
+        enabled: false
+      built_tags:
+        weight: 52
+        enabled: false
+      footer:
+        weight: 53
+        enabled: false
+      footer_left:
+        weight: 54
+        enabled: false
+      footer_links:
+        weight: 55
+        enabled: false
+      footer_right:
+        weight: 56
+        enabled: false
+      header_description:
+        weight: 57
+        enabled: false
+      header_intro:
+        weight: 58
+        enabled: false
+      partnership_tile:
+        weight: 59
+        enabled: false
+      partnership_tiles:
+        weight: 60
+        enabled: false
+      partnerships:
+        weight: 61
+        enabled: false
+      promotion:
+        weight: 62
+        enabled: false
+      services:
+        weight: 63
+        enabled: false
+      services_tile:
+        weight: 64
+        enabled: false
+      services_tiles:
+        weight: 65
+        enabled: false
+      why_us:
+        weight: 66
+        enabled: false
+      why_us_slider:
+        weight: 67
+        enabled: false
+      why_us_tile:
+        weight: 68
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: 45f4abc9-46cc-4d65-b7e2-9a6518952c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.about_us_built_articles
+id: paragraph.about_us_built_articles.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: about_us_built_articles
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

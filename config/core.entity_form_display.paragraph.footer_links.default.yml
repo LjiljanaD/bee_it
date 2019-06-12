@@ -1,0 +1,25 @@
+uuid: 7de2ceb4-ab3b-4065-95fc-b83a3db6be03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_links.field_link
+    - paragraphs.paragraphs_type.footer_links
+  module:
+    - link
+id: paragraph.footer_links.default
+targetEntityType: paragraph
+bundle: footer_links
+mode: default
+content:
+  field_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,41 @@
+uuid: bf73d318-c636-45d1-8ac6-7178df06d12f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.built.field_built_article
+    - field.field.paragraph.built.field_description
+    - field.field.paragraph.built.field_title
+    - paragraphs.paragraphs_type.built
+  module:
+    - entity_reference_revisions
+id: paragraph.built.default
+targetEntityType: paragraph
+bundle: built
+mode: default
+content:
+  field_built_article:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

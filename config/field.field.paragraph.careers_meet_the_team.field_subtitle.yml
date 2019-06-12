@@ -1,0 +1,19 @@
+uuid: 0efa3df4-cbda-44ea-ae31-87acbdabb060
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.careers_meet_the_team
+id: paragraph.careers_meet_the_team.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: careers_meet_the_team
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

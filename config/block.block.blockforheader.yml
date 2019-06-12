@@ -1,0 +1,25 @@
+uuid: 74b8056c-a688-4eb3-81f0-ebe065534664
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:header_block:f94f9fdc-f692-4a6b-ace5-9e68ef8c9817'
+  module:
+    - block_content
+  theme:
+    - bee_it
+id: blockforheader
+theme: bee_it
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:f94f9fdc-f692-4a6b-ace5-9e68ef8c9817'
+settings:
+  id: 'block_content:f94f9fdc-f692-4a6b-ace5-9e68ef8c9817'
+  label: 'Block for header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

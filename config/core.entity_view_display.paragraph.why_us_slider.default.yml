@@ -1,0 +1,24 @@
+uuid: 609c90bb-1e93-4ccb-ae16-88d7db4fa620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_us_slider.field_slide
+    - paragraphs.paragraphs_type.why_us_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.why_us_slider.default
+targetEntityType: paragraph
+bundle: why_us_slider
+mode: default
+content:
+  field_slide:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

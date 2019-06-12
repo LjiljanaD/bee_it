@@ -1,0 +1,88 @@
+uuid: 9984bd90-6a84-4a85-9e47-defdf581bffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_description
+    - paragraphs.paragraphs_type.header_description
+    - paragraphs.paragraphs_type.header_intro
+  module:
+    - entity_reference_revisions
+id: paragraph.header_intro.field_header_description
+field_name: field_header_description
+entity_type: paragraph
+bundle: header_intro
+label: 'Header Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      header_description: header_description
+    target_bundles_drag_drop:
+      built:
+        weight: 21
+        enabled: false
+      built_article:
+        weight: 22
+        enabled: false
+      built_header:
+        weight: 23
+        enabled: false
+      built_tags:
+        weight: 24
+        enabled: false
+      footer:
+        weight: 25
+        enabled: false
+      footer_left:
+        weight: 26
+        enabled: false
+      footer_links:
+        weight: 27
+        enabled: false
+      footer_right:
+        weight: 28
+        enabled: false
+      header_description:
+        enabled: true
+        weight: 29
+      header_intro:
+        weight: 30
+        enabled: false
+      partnership_tile:
+        weight: 31
+        enabled: false
+      partnership_tiles:
+        weight: 32
+        enabled: false
+      partnerships:
+        weight: 33
+        enabled: false
+      promotion:
+        weight: 34
+        enabled: false
+      services:
+        weight: 35
+        enabled: false
+      services_tile:
+        weight: 36
+        enabled: false
+      services_tiles:
+        weight: 37
+        enabled: false
+      why_us:
+        weight: 38
+        enabled: false
+      why_us_slider:
+        weight: 39
+        enabled: false
+      why_us_tile:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

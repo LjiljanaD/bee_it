@@ -1,0 +1,19 @@
+uuid: 8b49dc9a-a9bc-4ead-961e-2d3697c2889b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.team_member
+id: paragraph.team_member.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: team_member
+label: title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 8c4fe6e6-fbbe-460b-991c-7314752a4d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_tiles.field_tile
+    - paragraphs.paragraphs_type.services_tiles
+  module:
+    - paragraphs
+id: paragraph.services_tiles.default
+targetEntityType: paragraph
+bundle: services_tiles
+mode: default
+content:
+  field_tile:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

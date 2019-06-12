@@ -1,0 +1,22 @@
+uuid: 23d94f78-f4b4-4c09-863c-825e429f9086
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bee_it
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bee_it_content
+theme: bee_it
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

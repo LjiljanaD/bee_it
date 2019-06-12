@@ -1,0 +1,24 @@
+uuid: ee0a5318-a8ee-43f1-b2d1-a3ed1a3ed87b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partnership_tiles.field_partner_tile
+    - paragraphs.paragraphs_type.partnership_tiles
+  module:
+    - entity_reference_revisions
+id: paragraph.partnership_tiles.default
+targetEntityType: paragraph
+bundle: partnership_tiles
+mode: default
+content:
+  field_partner_tile:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 2c4d4ebc-a5af-4b37-92b4-8eefd3ada013
+langcode: en
+status: true
+dependencies: {  }
+id: team_positions
+label: 'Team Positions'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

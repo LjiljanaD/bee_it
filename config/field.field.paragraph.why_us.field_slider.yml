@@ -1,0 +1,67 @@
+uuid: 75d85955-f936-4712-bc0b-a26aa822831d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider
+    - paragraphs.paragraphs_type.why_us
+    - paragraphs.paragraphs_type.why_us_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.why_us.field_slider
+field_name: field_slider
+entity_type: paragraph
+bundle: why_us
+label: slider
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      why_us_slider: why_us_slider
+    target_bundles_drag_drop:
+      built:
+        weight: 14
+        enabled: false
+      built_article:
+        weight: 15
+        enabled: false
+      built_header:
+        weight: 16
+        enabled: false
+      built_tags:
+        weight: 17
+        enabled: false
+      partnership_tile:
+        weight: 18
+        enabled: false
+      partnership_tiles:
+        weight: 19
+        enabled: false
+      partnerships:
+        weight: 20
+        enabled: false
+      services:
+        weight: 21
+        enabled: false
+      services_tile:
+        weight: 22
+        enabled: false
+      services_tiles:
+        weight: 23
+        enabled: false
+      why_us:
+        weight: 24
+        enabled: false
+      why_us_slider:
+        enabled: true
+        weight: 25
+      why_us_tile:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

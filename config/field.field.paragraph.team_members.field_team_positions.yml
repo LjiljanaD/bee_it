@@ -1,0 +1,172 @@
+uuid: 2edd040d-582a-439a-97ce-698ed610403e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_team_positions
+    - paragraphs.paragraphs_type.team_members
+    - paragraphs.paragraphs_type.team_positions
+  module:
+    - entity_reference_revisions
+id: paragraph.team_members.field_team_positions
+field_name: field_team_positions
+entity_type: paragraph
+bundle: team_members
+label: 'team positions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      team_positions: team_positions
+    target_bundles_drag_drop:
+      about_us_built:
+        weight: 49
+        enabled: false
+      about_us_built_articles:
+        weight: 50
+        enabled: false
+      about_us_built_header:
+        weight: 51
+        enabled: false
+      about_us_built_tags:
+        weight: 52
+        enabled: false
+      about_us_description:
+        weight: 53
+        enabled: false
+      about_us_form:
+        weight: 54
+        enabled: false
+      about_us_intro:
+        weight: 55
+        enabled: false
+      about_us_preview:
+        weight: 56
+        enabled: false
+      about_us_preview_images:
+        weight: 57
+        enabled: false
+      about_us_services:
+        weight: 58
+        enabled: false
+      about_us_services_tile:
+        weight: 59
+        enabled: false
+      about_us_services_tiles:
+        weight: 60
+        enabled: false
+      about_us_team:
+        weight: 61
+        enabled: false
+      about_us_team_slide:
+        weight: 62
+        enabled: false
+      about_us_team_slider:
+        weight: 63
+        enabled: false
+      built:
+        weight: 64
+        enabled: false
+      built_article:
+        weight: 65
+        enabled: false
+      built_header:
+        weight: 66
+        enabled: false
+      built_tags:
+        weight: 67
+        enabled: false
+      careers_benefit:
+        weight: 68
+        enabled: false
+      careers_benefits:
+        weight: 69
+        enabled: false
+      careers_intro:
+        weight: 70
+        enabled: false
+      careers_meet_the_team:
+        weight: 71
+        enabled: false
+      footer:
+        weight: 72
+        enabled: false
+      footer_left:
+        weight: 73
+        enabled: false
+      footer_links:
+        weight: 74
+        enabled: false
+      footer_right:
+        weight: 75
+        enabled: false
+      header_description:
+        weight: 76
+        enabled: false
+      header_intro:
+        weight: 77
+        enabled: false
+      our_results_all_blogs:
+        weight: 78
+        enabled: false
+      our_results_blog:
+        weight: 79
+        enabled: false
+      our_results_intro:
+        weight: 80
+        enabled: false
+      our_results_intro_blog:
+        weight: 81
+        enabled: false
+      partnerships:
+        weight: 82
+        enabled: false
+      partnership_tile:
+        weight: 83
+        enabled: false
+      partnership_tiles:
+        weight: 84
+        enabled: false
+      promotion:
+        weight: 85
+        enabled: false
+      services:
+        weight: 86
+        enabled: false
+      services_tile:
+        weight: 87
+        enabled: false
+      services_tiles:
+        weight: 88
+        enabled: false
+      team_intro:
+        weight: 89
+        enabled: false
+      team_intro_image:
+        weight: 90
+        enabled: false
+      team_member:
+        weight: 91
+        enabled: false
+      team_members:
+        weight: 92
+        enabled: false
+      team_positions:
+        enabled: true
+        weight: 93
+      why_us:
+        weight: 94
+        enabled: false
+      why_us_slider:
+        weight: 95
+        enabled: false
+      why_us_tile:
+        weight: 96
+        enabled: false
+field_type: entity_reference_revisions

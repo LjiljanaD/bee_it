@@ -1,0 +1,36 @@
+uuid: 7084e0a3-d89e-4e60-a02a-7c0a800f97f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.built_header.field_header_tag
+    - field.field.paragraph.built_header.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.built_header
+  module:
+    - svg_image
+id: paragraph.built_header.default
+targetEntityType: paragraph
+bundle: built_header
+mode: default
+content:
+  field_header_tag:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

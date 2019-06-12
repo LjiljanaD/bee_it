@@ -1,0 +1,9 @@
+uuid: 6680b216-ddce-43fc-8c5f-5dee3224f8f5
+langcode: en
+status: true
+dependencies: {  }
+id: careers_benefit
+label: 'Careers Benefit'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

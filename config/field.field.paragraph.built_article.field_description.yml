@@ -1,0 +1,19 @@
+uuid: 1fa0f36e-58c6-45d4-bf1f-fdfffffaeaae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.built_article
+id: paragraph.built_article.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: built_article
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

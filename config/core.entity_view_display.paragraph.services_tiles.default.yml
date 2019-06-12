@@ -1,0 +1,24 @@
+uuid: 6afa17b5-4e17-42ad-8323-a0d6a38c653f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_tiles.field_tile
+    - paragraphs.paragraphs_type.services_tiles
+  module:
+    - entity_reference_revisions
+id: paragraph.services_tiles.default
+targetEntityType: paragraph
+bundle: services_tiles
+mode: default
+content:
+  field_tile:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }
